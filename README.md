@@ -48,6 +48,9 @@ GATEWAY_ENABLE_PROXY: true
 BackendGenSentinel: true
 AUTH_KEY_HEADER ：header中秘钥key名称，默认为AuthKey，**share网关不要配置该值**，非share网关可自行配置
 
+# POW计算节点地址，分布式计算pow，节点安装见下方
+POW_URL_LIST:
+  - "http://ip:8900"
 ```
 
 #### 监控说明
@@ -60,7 +63,7 @@ AUTH_KEY_HEADER ：header中秘钥key名称，默认为AuthKey，**share网关�
 * header增加AUTH_KEY {"authkey":"你的key"}
 
 
-### 负载节点
+### 代理负载节点
 
 执行一键部署脚本
 ```
@@ -76,6 +79,36 @@ curl -sSfL -o proxy-node-quick-install.sh https://raw.githubusercontent.com/wm-c
 
 <img width="645" alt="image" src="https://github.com/wm-chatgpt/chatgpt-gateway/assets/20039029/64c6ab2d-d42b-45ec-b4c9-6cef9ac47121">
 
+### POW负载节点
+```
+version: '3.4'
+
+services:
+  wm-pow:
+    image: hanglegehang/wm-pow:latest
+    restart: always
+    ports:
+      - "8900:8900"
+    volumes:
+      - ./data:/data
+    environment:
+      - MaxPowThread=6
+      - GIN_MODE=release
+      - LOG_LEVEL=info
+      - TZ=Asia/Shanghai
+    labels:
+      - "com.centurylinklabs.watchtower.scope=wm-pow"
+  watchtower:
+    image: containrrr/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --scope wm-pow --cleanup --interval 600
+    restart: always
+    environment:
+      - TZ=Asia/Shanghai
+    labels:
+      - "com.centurylinklabs.watchtower.scope=wm-pow"
+```
 
 
 
