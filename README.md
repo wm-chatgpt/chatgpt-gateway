@@ -80,6 +80,9 @@ curl -sSfL -o proxy-node-quick-install.sh https://raw.githubusercontent.com/wm-c
 <img width="645" alt="image" src="https://github.com/wm-chatgpt/chatgpt-gateway/assets/20039029/64c6ab2d-d42b-45ec-b4c9-6cef9ac47121">
 
 ### POW负载节点
+
+docker-compose.yml
+
 ```
 version: '3.4'
 
