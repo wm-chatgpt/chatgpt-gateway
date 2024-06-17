@@ -5,7 +5,7 @@
 
 所有节点均需自行准备，要求可直连访问OpenAi（香港不行），本网关不限制速率，但需要根据账号规模搭建代理节点，
 
-如不想购买vps，使用动态住宅ip也可，推荐一个厂商：[https://www.ipwo.net](https://www.ipwo.net/?pl=huasheng)
+如不想购买vps，使用动态住宅ip也可
 
 注意：：**网关支持转API，详情联系vx**
 
