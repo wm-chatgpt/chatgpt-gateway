@@ -36,19 +36,26 @@ AUTHKEY: "你配置的值"
 配置文件目录`/root/chatgpt-gateway-node/config.yaml`
 ```
 LICENCE : 授权码，联系客服获取 vx：xxxxxxxhang（请备注网关）
+
 # 代理节点地址，默认无代理，v4和v6均可
 PROXY_URL :
   - socks5://xx:yy@111.222.333.444:8443
-# arkose代理节点地址，要求必须为ipv4，2024年06月20日更新  
+
+# arkose代理节点地址，要求必须为ipv4，默认读PROXY_URL，2024年06月20日更新  
 ARK_PROXY_URL:
   - socks5://xx:yy@111.222.333.444:8443
+
 # 管理后台密码
 WEB_PASSWORD: "123789"
+
 AUTH_KEY : 网关访问秘钥，填free，则忽视鉴权，开启裸奔模式
+
 #网关节点参与代理，默认参与，不支持热更新
 GATEWAY_ENABLE_PROXY: true
+
 #后端计算sentinel token 默认为false，支持热更新，true则支持api模式
 BackendGenSentinel: true
+
 AUTH_KEY_HEADER ：header中秘钥key名称，默认为AuthKey，**share网关不要配置该值**，非share网关可自行配置
 
 # POW计算节点地址，分布式计算pow，节点安装见下方
