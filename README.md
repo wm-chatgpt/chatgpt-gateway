@@ -68,13 +68,13 @@ POW_URL_LIST:
 
 监控endpoint：
 
-* 对话状态监控：http://网关地址/gateway/ping
-* arkose对话打码监控：http://网关地址/gateway/ping/arkose/chat
-* arkose登录打码监控：http://网关地址/gateway/ping/arkose/login
+* 对话状态监控：`http://网关地址/gateway/ping`
+* arkose对话打码监控：`http://网关地址/gateway/ping/arkose/chat`
+* arkose登录打码监控：`http://网关地址/gateway/ping/arkose/login`
 
 json查询方式：
 
-关键词：forbiddenIps 期望值：none
+关键词：`forbiddenIps` 期望值：`none`
 
 额外配置：
 
