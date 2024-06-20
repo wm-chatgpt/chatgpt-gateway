@@ -36,8 +36,11 @@ AUTHKEY: "你配置的值"
 配置文件目录`/root/chatgpt-gateway-node/config.yaml`
 ```
 LICENCE : 授权码，联系客服获取 vx：xxxxxxxhang（请备注网关）
-# 代理节点地址，默认无代理  
+# 代理节点地址，默认无代理，v4和v6均可
 PROXY_URL :
+  - socks5://xx:yy@111.222.333.444:8443
+# arkose代理节点地址，要求必须为ipv4，2024年06月20日更新  
+ARK_PROXY_URL:
   - socks5://xx:yy@111.222.333.444:8443
 # 管理后台密码
 WEB_PASSWORD: "123789"
