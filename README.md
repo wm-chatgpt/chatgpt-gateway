@@ -15,6 +15,8 @@ chat2api-plus：https://github.com/hanglegehang/chat2api-plus
 
 自建v6代理池教程：编写中
 
+欢迎加v探讨技术问题，随时欢迎👏🏻
+
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/57e790ce-de17-4247-8b6a-0b754585b36b">
 
 
