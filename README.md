@@ -1,9 +1,10 @@
 # chatgpt网关私有化部署方案
 
 ## 写在前面
-本安装教程仅用来体验私有化部署流程，不建议生产环境大规模使用，有本地化部署诉求联系vx
+~~本安装教程仅用来体验私有化部署流程，不建议生产环境大规模使用，有本地化部署诉求联系vx~~
 
-注意：：**网关支持转API，详情联系vx**
+~~注意：：**网关支持转API，详情联系vx**~~
+2024年10月15日更新，本项目转为闭源免费使用，可一键部署个人chatgpt网关
 
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/57e790ce-de17-4247-8b6a-0b754585b36b">
 
@@ -20,7 +21,7 @@ curl -sSfL -o gateway-node-quick-install.sh https://raw.githubusercontent.com/wm
 ##### 安装说明
 AuthKey : 接口访问秘钥，对应share配置中的AuthKey，填写free为裸奔模式，忽略鉴权
 
-Licence : 授权码，联系客服获取，需提供主节点IP
+Licence : ~~授权码，联系客服获取，需提供主节点IP~~
 
 脚本安装成功后会打印网关地址，可以自行配置反代、https等，处理完成后修改share启动参数即可：
 
@@ -38,10 +39,6 @@ LICENCE : 授权码，联系客服获取 vx：xxxxxxxhang（请备注网关）
 PROXY_URL :
   - socks5://xx:yy@111.222.333.444:8443
 
-# arkose代理节点地址，要求必须为ipv4，默认读PROXY_URL，2024年06月20日更新  
-ARK_PROXY_URL:
-  - socks5://xx:yy@111.222.333.444:8443
-
 # 管理后台密码
 WEB_PASSWORD: "123789"
 
@@ -49,11 +46,6 @@ AUTH_KEY : 网关访问秘钥，填free，则忽视鉴权，开启裸奔模式
 
 #网关节点参与代理，默认参与，不支持热更新
 GATEWAY_ENABLE_PROXY: true
-
-#后端计算sentinel token 默认为false，支持热更新，true则支持api模式
-BackendGenSentinel: true
-
-AUTH_KEY_HEADER ：header中秘钥key名称，默认为AuthKey，**share网关不要配置该值**，非share网关可自行配置
 
 # POW计算节点地址，分布式计算pow，节点安装见下方
 POW_URL_LIST:
