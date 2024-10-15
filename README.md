@@ -6,7 +6,12 @@
 ~~注意：：**网关支持转API，详情联系vx**~~
 2024年10月15日更新，本项目转为闭源免费使用，可一键部署个人chatgpt网关
 
+机器剩余时长提供免费备用网关，能抗3qps量，大家自行使用，从哪里来到哪里去，感谢demo.xyhelper社区
+
+免费网关地址：https://demo.closeoai.com
+
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/57e790ce-de17-4247-8b6a-0b754585b36b">
+
 
 ## 部署流程
 
