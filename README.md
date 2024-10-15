@@ -11,6 +11,8 @@
 
 免费网关地址：https://demo.closeoai.com
 
+chat2api-plus：https://github.com/hanglegehang/chat2api-plus
+
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/57e790ce-de17-4247-8b6a-0b754585b36b">
 
 
