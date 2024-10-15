@@ -45,7 +45,7 @@ AUTHKEY: "你配置的值"
 #### 配置项说明
 配置文件目录`/root/chatgpt-gateway-node/config.yaml`
 ```
-LICENCE : 授权码，联系客服获取 vx：xxxxxxxhang（请备注网关）
+LICENCE : "xiaohuasheng666"
 
 # 代理节点地址，默认无代理，v4和v6均可
 PROXY_URL :
