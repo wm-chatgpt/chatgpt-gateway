@@ -33,7 +33,7 @@ curl -sSfL -o gateway-node-quick-install.sh https://raw.githubusercontent.com/wm
 ##### 安装说明
 AuthKey : 接口访问秘钥，对应share配置中的AuthKey，填写free为裸奔模式，忽略鉴权
 
-Licence : ~~授权码，联系客服获取，需提供主节点IP~~
+Licence : "xiaohuasheng666"
 
 脚本安装成功后会打印网关地址，可以自行配置反代、https等，处理完成后修改share启动参数即可：
 
