@@ -63,22 +63,3 @@ GATEWAY_ENABLE_PROXY: true
 POW_URL_LIST:
   - "http://ip:8900"
 ```
-
-#### 监控说明
-基于uptime-kuma监控，https://github.com/louislam/uptime-kuma
-
-监控endpoint：
-
-* 对话状态监控：`http://网关地址/gateway/ping`
-* arkose对话打码监控：`http://网关地址/gateway/ping/arkose/chat`
-* arkose登录打码监控：`http://网关地址/gateway/ping/arkose/login`
-
-json查询方式：
-
-关键词：`forbiddenIps` 期望值：`none`
-
-额外配置：
-
-header增加AUTH_KEY {"authkey":"你的key"}
-
-
